@@ -1,0 +1,427 @@
+/* essential set up */
+:root
+{
+    /* colors */
+
+    /* background color */
+    --background-color: #f6f6f6;
+
+    /* foreground color */
+    --foreground-color:#3F3D56;
+
+    /* gray in the vector */
+    --gray:#D0CDE1;
+
+    /* light blue */
+    --light-blue:#6C63FF;
+
+    /* card color */
+    --card-color:#FCFCFC;
+
+    /* font family  */
+    --main-font:'Tajawal', sans-serif;
+
+}
+
+/* customize pre-defined bootstrap classes */
+
+/* removing the padding from the main wrapper */
+.container-fluid
+{
+    padding: 0;
+}
+
+/* colors classes & helper classes */
+
+/* making the background on the main light themev */
+.light
+{
+    background-color: var(--background-color);
+}
+
+/* when a link is active */
+.active a
+{
+    color: var(--light-blue);
+}
+
+/* the body of the page */
+body
+{
+    /* the main background color */
+    background-color: var(--background-color);
+
+    /* the main text color */
+    color: var(--foreground-color);
+
+    /* font family */
+    font-family: var(--main-font);
+
+    font-size: 25px;
+    font-weight: bold;
+
+    /* remove the padding from the body */
+}
+
+
+
+/* nav bar */
+
+.nav-link
+{
+    color: var(--foreground-color);
+}
+
+.nav-link:hover
+{
+    color: var(--light-blue);
+}
+.navbar-nav
+{
+    direction: rtl;
+}
+
+/* logo */ 
+.navbar-brand
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* navbar menu list */
+.nav-link
+{
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+/* contact us logos */
+.contacts a
+{
+    margin: 10px;
+    color: var(--foreground-color);
+}
+
+.contacts a:hover
+{
+    color: var(--light-blue);
+}
+
+
+/* pages */
+
+main
+{
+    margin-top: 70px;
+}
+
+/* the home page section */
+/* home page */
+
+.home-vector
+{
+    margin-top: 10vh;
+    min-height: 120px;
+    min-width: 300px;
+}
+
+.home .home-slogan
+{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.register-btn
+{
+    display: block;
+    background-color: var(--foreground-color);
+    color: var(--gray);
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.scroll-icon img
+{
+    margin-top: 10px;
+    height:30px;
+}
+
+.scroll-icon .scroll-down-text
+{
+    font-size:20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+/* know us page */
+
+.know-us
+{
+   direction: rtl;
+}
+
+.headline 
+{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    font-weight: bold;
+}
+
+.column-img
+{
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.column-img img
+{
+    max-height: 100px;
+}
+
+.coloumn-header
+{
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.column-details p
+{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.column
+{
+    width: 3px;
+    height: 100vh;
+    margin-top: 20vh;
+    background-color: rgba(107, 99, 255, 0.65);
+}
+
+.tutorials
+{
+    direction: rtl;
+    margin-bottom: 20px;
+}
+
+.tutorials .card
+{
+    text-align: right;
+    background-color: var(--card-color);
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+
+.tutorials .price-vector
+{
+    margin-right: 17px;
+    position: absolute;
+    top: 0;
+}
+
+.price-number
+{
+    position: absolute;
+    font-size: 21px;
+    right: 42px;
+    top: 8px;
+}
+
+.price-number .g
+{
+    margin-right: 2px;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.card-img
+{
+    max-height:120px;
+    max-width: 300px;
+}
+
+.tutorail-description
+{
+    font-size: .8em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-down
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+/* know more button */
+.more-details-btn
+{
+    /* making the card buttons aligned */ 
+    position: absolute;
+    bottom: 20px;
+
+    /* making thr link look like a button */
+    display: inline-block;
+    font-size: .6em;
+    color: var(--gray);
+    background-color: var(--foreground-color);
+    height: 30px;
+    width: 120px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+.more-details-btn:hover
+{
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+/* contact us */ 
+.contact-us
+{
+    background-color: var(--foreground-color);
+    width: 100%;
+}
+
+.contact-us header h1
+{
+    margin: 20px 0;
+    color: var(--gray);
+}
+
+.contact-items
+{
+    margin-top: 50px;
+    justify-content: space-evenly;
+    direction: rtl;
+}
+
+.contact-item a , .contact-item h4
+{
+    margin-top: 10px;
+    font-size: 40px;
+    color: var(--gray);
+}
+
+.contact-item a:hover
+{
+    color: var(--light-blue);
+}
+
+.contact-item h4
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.phone-number
+{
+    font-size: 20px !important;  
+}
+.row
+{
+    margin: 0;
+}
+
+footer 
+{
+    background-color: var(--foreground-color);
+    width: 100%;
+    height: 130px;
+}
+
+footer h3
+{
+    padding-top: 50px;
+    color: var(--gray);
+    text-align: center;
+}
+
+
+/* login page */ 
+
+.user-data-form
+{
+    height: 100%;
+}
+
+.user-account
+{
+    width: 100%;
+}
+.sign-now-headline
+{
+    font-weight: bold;
+    margin:10vh 0;
+}
+
+.input-container
+{
+    margin-bottom: 10px;
+}
+
+.input-label
+{
+    font-size: 13px;
+    text-align: end;
+    margin-right: 6px;
+}
+
+.user-input
+{
+    direction: rtl;
+    padding-right: 5px;
+    font-size: 15px;
+    height: 30px;
+    width: 100%;
+    border:1px solid var(--foreground-color);
+    border-radius: 8px;
+    color: var(--foreground-color);
+}
+
+.subscribe-btn
+{
+    width:150px;
+    font-size:15px;
+    margin: 20px;
+    border: 1px solid var(--gray);
+    border: none;
+    padding: 3px 0;
+    border-radius: 5px;
+    background-color: var(--foreground-color);
+    color: var(--gray);
+}
+
+.subscribe-btn:hover
+{
+    color: var(--light-blue);
+}
+
+.forget-password
+{
+    font-size: 12px;
+    color: var(--foreground-color);
+}
+
+.forget-password:hover
+{
+    color: var(--light-blue);
+    cursor: pointer;
+}
